@@ -40,3 +40,19 @@ class Film extends Media {
     print("Ceci est un Film : $titre, durée : $dureeMinutes minutes.");
   }
 }
+
+void main() {
+  // Création du catalogue contenant des livres et des films.
+  final List<Media> catalogue = [
+    Livre("Le Petit Prince", "Antoine de Saint-Exupéry"),
+    Film("Le Voyage de Chihiro", 125),
+    Livre("L’Étranger", "Albert Camus"),
+    Film("Les Temps modernes", 87),
+  ];
+
+  // Affichage des informations de chaque média.
+  for (final media in catalogue) {
+    media.afficherType();
+  }
+}
+// Fin de l'Exercice 4
