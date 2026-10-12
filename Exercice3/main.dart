@@ -21,3 +21,14 @@ class Compte {
     }
 }
 }
+
+void main() {
+  // Création du compte avec un solde initial de 0.0.
+  final compte = Compte('123456');
+
+  // Effectuons un dépôt.
+  compte.depot(150.0);
+
+  // Affichage du solde formaté.
+  print(compte.solde);
+}
