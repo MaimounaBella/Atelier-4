@@ -12,3 +12,15 @@ class Tache {
     nombreTotal++;
   }
 }
+
+void main() {
+  // Création de trois instances de Tache.
+  final tache1 = Tache('Faire les exercices');
+  final tache2 = Tache('Réviser Dart');
+  final tache3 = Tache('Préparer le prochain atelier');
+
+  // Affichage du compteur en utilisant le nom de la classe.
+  print(Tache.nombreTotal);
+}
+
+//Fin de l'Exercice7
