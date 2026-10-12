@@ -12,3 +12,18 @@ abstract class Forme {
     print("Calcul de l’aire...");
   }
 }
+
+
+// Le Cercle hérite de Forme.
+class Cercle extends Forme {
+  // Le rayon du cercle, qui est fixé lors de sa création.
+  final double rayon;
+
+  Cercle(this.rayon);
+
+  // Calculons l'aire du cercle : pi × rayon².
+  @override
+  double calculerAire() {
+    return pi * rayon * rayon;
+  }
+}
