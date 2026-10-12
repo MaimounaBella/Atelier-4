@@ -42,3 +42,20 @@ class Rectangle extends Forme {
     return longueur * largeur;
   }
 }
+
+
+void main() {
+  // Création d'un cercle de rayon 5 et d'un rectangle de 4 par 6.
+  final cercle = Cercle(5);
+  final rectangle = Rectangle(4, 6);
+
+  // Affichage du message et de l'aire de chaque forme.
+  cercle.afficherMessage();
+  print('Aire du cercle : ${cercle.calculerAire()}');
+
+  rectangle.afficherMessage();
+  print('Aire du rectangle : ${rectangle.calculerAire()}');
+}
+
+// Fin de l'Exercice 5
+
