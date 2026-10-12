@@ -9,4 +9,28 @@ class Couleur {
   // Constructeur général : permet de choisir les trois composantes.
   Couleur(this.r, this.g, this.b);
 
+
+  // Constructeur nommé pour créer la couleur rouge.
+  Couleur.rouge()
+      : r = 255,
+        g = 0,
+        b = 0;
+
+  // Constructeur nommé pour créer la couleur verte.
+  Couleur.vert()
+      : r = 0,
+        g = 255,
+        b = 0;
+
+  // Constructeur nommé pour créer la couleur bleue.
+  Couleur.bleu()
+      : r = 0,
+        g = 0,
+        b = 255;
+
+  // Affiche les composantes de la couleur au format demandé.
+  void afficherCouleur() {
+    print('(R :$r, V :$g, B :$b)');
+  }
+
   }
