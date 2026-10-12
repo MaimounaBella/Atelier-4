@@ -12,3 +12,17 @@ class Media {
     print("Ceci est un média générique.");
   }
 }
+
+// L'heritage du livre de Media et ajout de son auteur.
+class Livre extends Media {
+  final String auteur;
+
+  // Initialisation du titre dans Media et l'auteur dans Livre.
+  Livre(String titre, this.auteur) : super(titre);
+
+  // Affichage du titre et l'auteur du livre.
+  @override
+  void afficherType() {
+    print("Ceci est un Livre : $titre par $auteur.");
+  }
+}
