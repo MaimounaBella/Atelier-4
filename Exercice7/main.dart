@@ -22,5 +22,4 @@ void main() {
   // Affichage du compteur en utilisant le nom de la classe.
   print(Tache.nombreTotal);
 }
-
 //Fin de l'Exercice7
