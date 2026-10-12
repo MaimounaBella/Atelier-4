@@ -31,6 +31,21 @@ class Livre {
 
 }
 
+// L'heritage du roman de Livre et l'ajoute d'un genre.
+class Roman extends Livre {
+  String genre;
+
+  // Initialisation du titre, l'auteur et le genre du roman.
+  Roman(String titre, String auteur, this.genre) : super(titre, auteur);
+
+  // Affichage les informations du livre et de son genre.
+  @override
+  void afficherInfos() {
+    super.afficherInfos();
+    print('Genre: $genre');
+  }
+}
+
 void main() {
   // Création de deux livres.
   final livre1 = Livre('Le Petit Prince', 'Antoine de Saint-Exupéry');
@@ -43,6 +58,21 @@ void main() {
   print('Pages: ${livre1.pages}');
   print('Pages: ${livre2.pages}');
 
+
+    // Création de deux romans.
+  final roman1 = Roman(
+    'Le mystère de la chambre jaune',
+    'Gaston Leroux',
+    'Policier',
+  );
+  final roman2 = Roman('Dune', 'Frank Herbert', 'Science-fiction');
+
+  // Affichage des informations et le genre de chaque roman.
+  roman1.afficherInfos();
+  roman2.afficherInfos();
+
+
+  // Affichage du total une seule fois, romans compris.
   Livre.afficherTotalLivres();
   
 }
