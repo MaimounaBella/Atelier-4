@@ -22,3 +22,17 @@ class Point {
 
   }
 
+  void main() {
+  // Création d'un point aux coordonnées (2, 5).
+  var pt = Point(2, 5);
+
+  // Affichage des coordonnées initiales.
+  pt.display();
+
+  // Déplacement du point de (-1, 3).
+  pt.move(-1, 3);
+
+  // Affichage des nouvelles coordonnées.
+  pt.display();
+}
+
