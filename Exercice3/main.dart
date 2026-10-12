@@ -14,4 +14,10 @@ class Compte {
   // Rendu du solde avec deux décimales et le symbole dollar.
   String get solde => '${_solde.toStringAsFixed(2)} \$';
 
+// Ajout du montant au solde uniquement s'il est positif.
+  void depot(double montant) {
+    if (montant > 0) {
+      _solde += montant;
+    }
+}
 }
