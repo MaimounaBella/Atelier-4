@@ -26,3 +26,17 @@ class Livre extends Media {
     print("Ceci est un Livre : $titre par $auteur.");
   }
 }
+
+// L'heritage du film de Media et ajout de sa durée en minutes.
+class Film extends Media {
+  final int dureeMinutes;
+
+  // Initialisation du titre dans Media et la durée dans Film.
+  Film(String titre, this.dureeMinutes) : super(titre);
+
+  // Affichage du titre et la durée du film.
+  @override
+  void afficherType() {
+    print("Ceci est un Film : $titre, durée : $dureeMinutes minutes.");
+  }
+}
