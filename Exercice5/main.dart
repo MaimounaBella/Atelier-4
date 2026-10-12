@@ -27,3 +27,18 @@ class Cercle extends Forme {
     return pi * rayon * rayon;
   }
 }
+
+// Le rectangle hérite de Forme.
+class Rectangle extends Forme {
+  // Dimensions du rectangle, fixées lors de sa création.
+  final double longueur;
+  final double largeur;
+
+  Rectangle(this.longueur, this.largeur);
+
+  // Calculons l'aire du rectangle : longueur × largeur.
+  @override
+  double calculerAire() {
+    return longueur * largeur;
+  }
+}
