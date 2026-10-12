@@ -32,6 +32,8 @@ class Couleur {
   void afficherCouleur() {
     print('(R :$r, V :$g, B :$b)');
   }
+   }
+   
 
   void main() {
   // Crée les trois couleurs avec leurs constructeurs nommés.
@@ -44,4 +46,7 @@ class Couleur {
   vert.afficherCouleur();
   bleu.afficherCouleur();
 }
-  }
+
+//Fin de l'exercice1
+
+  
