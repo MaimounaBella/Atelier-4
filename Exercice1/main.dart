@@ -33,4 +33,15 @@ class Couleur {
     print('(R :$r, V :$g, B :$b)');
   }
 
+  void main() {
+  // Crée les trois couleurs avec leurs constructeurs nommés.
+  final rouge = Couleur.rouge();
+  final vert = Couleur.vert();
+  final bleu = Couleur.bleu();
+
+  // Affiche les informations de chaque couleur.
+  rouge.afficherCouleur();
+  vert.afficherCouleur();
+  bleu.afficherCouleur();
+}
   }
